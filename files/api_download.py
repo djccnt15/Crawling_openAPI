@@ -21,7 +21,7 @@ Pricelist = []
 
 
 while endnumber<=100:
-    url='http://211.237.50.150:7080/openapi/3ee0ccf85e3198812547d2f3757388be90459f980189e445873108740afb2580/xml/Grid_20141217000000000090_1/' +str(startnumber)+'/ '+str(endnumber)+ '?EXAMIN_DE=20190520'
+    url='http://211.237.50.150:7080/openapi/'''your personal key'''/xml/Grid_20141217000000000090_1/' +str(startnumber)+'/ '+str(endnumber)+ '?EXAMIN_DE=20190520'
     req = requests.get(url)
     html = req.text
     soup = BeautifulSoup(html, 'html.parser')
